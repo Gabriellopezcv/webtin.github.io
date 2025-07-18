@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Mastery Seven | Moda de lujo minimalista</title>
+  <meta name="description"
+    content="Descubre Mastery Seven, una marca de moda de lujo minimalista con diseño de alta gama, para hombre, mujer y accesorios exclusivos." />
+  <meta name="author" content="Mastery Seven" />
+  <meta name="keywords" content="moda, lujo, minimalista, diseño, Mastery Seven, accesorios, hombre, mujer" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- EL LOGO SE MUEVE FUERA DEL HEADER PARA SOLUCIONAR EL PROBLEMA DE POSICIONAMIENTO -->
+  <a href="#" id="site-logo" aria-label="Ir a la página de inicio de Mastery Seven">MASTERY SEVEN</a>
+
+  <header role="banner" aria-label="Navegación principal del sitio">
+    <div class="header-content">
+      <div class="menu-busqueda">
+        <nav class="dropdown" aria-label="Menú principal de navegación">
+          <button class="menu-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-menu"
+            id="menu-button" aria-label="Abrir menú principal">
+            <div class="hamburger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+          <ul id="dropdown-menu" class="dropdown-content" role="menu">
+            <li role="none"><a href="#productos-destacados" role="menuitem">Creaciones</a></li>
+            <li role="none"><a href="#filosofia" role="menuitem">Filosofía</a></li>
+            <li role="none"><a href="#contacto" role="menuitem">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="search-box">
+          <i data-lucide="search" class="search-icon"></i>
+          <input type="search" placeholder="Buscar..." aria-label="Caja de búsqueda de productos" />
+        </div>
+      </div>
+      
+      <!-- El logo ya no está aquí -->
+
+      <div class="user-actions">
+        <a href="#wishlist" class="action-icon" aria-label="Ver lista de deseos"><i data-lucide="heart"></i></a>
+        <a href="#carrito" class="action-icon" aria-label="Ver carrito de compras"><i data-lucide="shopping-cart"></i></a>
+        <a href="#cuenta" class="action-icon" aria-label="Acceder a tu cuenta"><i data-lucide="user"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section fade-in" id="hero">
+      <div class="hero-content">
+        <a href="#productos-destacados" class="btn btn-primary">Explorar la Colección</a>
+      </div>
+    </section>
+
+    <section id="productos-destacados" class="fade-in">
+      <h2>Nuestras Últimas Creaciones</h2>
+      <p>Diseño de vanguardia fusionado con materiales exquisitos.</p>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&auto=format&fit=crop&q=60" alt="Mujer con atuendo minimalista de lujo">
+          <h3>Abrigo de Lana Stratus</h3>
+          <p class="price">€450</p>
+          <button class="btn btn-secondary">Añadir al carrito</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=500&auto=format&fit=crop&q=60" alt="Hombre con traje elegante y moderno">
+          <h3>Blazer de Lino Noir</h3>
+          <p class="price">€320</p>
+          <button class="btn btn-secondary">Añadir al carrito</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1620799140408-74403d7c5a0a?w=500&auto=format&fit=crop&q=60" alt="Accesorios de moda sobre fondo neutro">
+          <h3>Gafas de Sol Eclipse</h3>
+          <p class="price">€180</p>
+          <button class="btn btn-secondary">Añadir al carrito</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1588117260148-b47828782c09?w=500&auto=format&fit=crop&q=60" alt="Zapatos de cuero hechos a mano">
+          <h3>Mocasín Ónix</h3>
+          <p class="price">€250</p>
+          <button class="btn btn-secondary">Añadir al carrito</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="filosofia" class="fade-in">
+      <h2>Nuestra Filosofía</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>En Mastery Seven, creemos que la verdadera sofisticación reside en la simplicidad y la artesanía impecable.
+            Cada pieza es diseñada para trascender las tendencias, ofreciendo un lujo silencioso que habla por sí mismo.
+          </p>
+          <p>Nos comprometemos con la sostenibilidad y la ética, seleccionando solo los materiales más finos y
+            colaborando con artesanos que comparten nuestra visión de calidad y durabilidad.</p>
+          <a href="#contacto" class="btn btn-primary">Conoce Más</a>
+        </div>
+        <div class="about-image-placeholder">
+          <img src="https://images.unsplash.com/photo-1549298249-eac936171b31?w=500&auto=format&fit=crop&q=60" alt="Taller de un artesano de la moda">
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="fade-in">
+      <h2>Contacta con Nosotros</h2>
+      <p>¿Tienes alguna pregunta o necesitas asistencia? Estamos aquí para ayudarte.</p>
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required aria-required="true" placeholder="Tu nombre">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required aria-required="true" placeholder="tu.email@ejemplo.com">
+        </div>
+        <div class="form-group">
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" rows="5" required aria-required="true" placeholder="Escribe tu mensaje aquí..."></textarea>
+        </div>
+        <div id="status-message" class="status-message" role="alert" aria-live="polite"></div>
+        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+      </form>
+    </section>
+  </main>
+  
+  <footer role="contentinfo">
+    <div class="footer-content">
+      <p>© 2025 Mastery Seven. Todos los derechos reservados.</p>
+      <nav aria-label="Enlaces de pie de página">
+        <ul>
+          <li><a href="#privacidad">Política de Privacidad</a></li>
+          <li><a href="#terminos">Términos de Servicio</a></li>
+          <li><a href="#envios">Envíos y Devoluciones</a></li>
+        </ul>
+      </nav>
+      <div class="social-links" aria-label="Síguenos en redes sociales">
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Mastery Seven"><i data-lucide="facebook"></i></a>
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Mastery Seven"><i data-lucide="instagram"></i></a>
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter de Mastery Seven"><i data-lucide="twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="script.js"></script>
+</body>
+</html>
